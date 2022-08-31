@@ -52,7 +52,4 @@ let que = new Queue()
 que.enQueue(44)
 que.enQueue(5)
 que.enQueue(10)
-que.deQueue()
-console.log(que.peek())
-console.log(que.isempty())
-console.log(que)
+console.log(que);

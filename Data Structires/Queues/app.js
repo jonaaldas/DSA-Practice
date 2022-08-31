@@ -33,8 +33,12 @@ class Queue{
 
 const queue = new Queue()
 queue.enQueue(10)
+queue.enQueue(20)
+queue.enQueue(30)
+queue.enQueue(40)
+queue.enQueue(400)
 // queue.deQueue()
-queue.peek()
+// console.log(queue.peek());
 queue.getSize()
 queue.isEmpty()
 console.log(queue)
