@@ -39,5 +39,5 @@ bst.insert_node(1)
 bst.insert_node(34)
 bst.insert_node(89)
 bst.insert_node(13)
-bst.insert_node(16)
+
 console.log(bst)
