@@ -34,11 +34,31 @@ class BST {
 		this.size++;
 		placement(this.head);
 	}
+
+	findData(val) {
+		let findMe = function (node) {
+			if (val < node) {
+				if (node.left === val) {
+					return true;
+				} else {
+					findMe(node.left);
+				}
+			} else if (val > node) {
+				if (node.right === val) {
+					return true;
+				} else {
+					findMe(node.right);
+				}
+			} else if (node === val) {
+				return true;
+			}
+		};
+		findMe(this.head);
+	}
 }
 
 const bs = new BST(74);
 bs.insertNode(10);
-bs.insertNode(5);
-bs.insertNode(3);
-bs.insertNode(90);
+bs.insertNode(75);
+console.log(bs.findData(7));
 console.log(bs);
